@@ -42,6 +42,7 @@ print "Total Employee %d" % Employee.empCount
 # Instantiation
 # Intance
 # Class
+# Class variable
 # use this as a template for your other answers
 
 
