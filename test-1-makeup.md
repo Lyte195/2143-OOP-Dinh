@@ -259,7 +259,8 @@ class myPrimes(object):
 		self.p.remove(r)
 		
 	def printPrimes(self):
-		return(self.p)
+		for x in range(len(self.p)):			
+			print(self.p[x]) 
 
 ```
 
