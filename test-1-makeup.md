@@ -171,6 +171,9 @@ Your answer should include just the code that loops and creates the new dictiona
 ## Answer 4
 
 ```python
+for k,v in months.items():
+	v = v[0:3]
+	print(k,":", v.lower())
 
 ```
 
