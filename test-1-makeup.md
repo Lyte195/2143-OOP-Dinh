@@ -202,7 +202,21 @@ When writing your answer, include the entire function definition (without the co
 ## Answer 5
 
 ```python
-
+def miniStats(L):
+	s = L[x]
+	for x in range(len(L)):
+		if(L[x] < s):
+			s = L[x]
+	
+	l = L[x]		
+	for z in range(len(L)):
+		if(L[x] > s):
+			s = L[x]
+	
+	a = sum(L) / len(L)		
+	
+	return(s, l, a)
+		
 ```
 
 -----
