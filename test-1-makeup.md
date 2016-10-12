@@ -110,6 +110,20 @@ print(NList)
 ```
 
 Your answer should consist of just the function definition and none of the usage I provided above.
+-----
+
+## Answer 3
+
+```python
+def addPrevious(L):
+	for x in range (len(L)):
+		L[x] /= (x+1)
+	return(L)
+
+NList = addPrevious(L)
+print(NList)
+
+```
 
 -----
 
@@ -154,6 +168,14 @@ Your answer should include just the code that loops and creates the new dictiona
 
 -----
 
+## Answer 4
+
+```python
+
+```
+
+-----
+
 ## 5: Min and Max
 (10 Points)
 
@@ -177,6 +199,14 @@ When writing your answer, include the entire function definition (without the co
 
 -----
 
+## Answer 5
+
+```python
+
+```
+
+-----
+
 
 
 ## 6: Prime Class
@@ -191,5 +221,13 @@ Write a class called `myPrimes` that represents a collection of your prime numbe
 - `printPrimes`:
     - this method will print your prime numbers out 
  
+
+-----
+
+## Answer 6
+
+```python
+
+```
 
 -----
