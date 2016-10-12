@@ -77,10 +77,18 @@ def addInOrder(L):
 ## Answer 2
 
 ```python
+States.sort()
 
+def addInOrder(L):
+    #add to the list L in the proper order
+	for x in range (len(States)):
+		if (States[x] > L):
+			States.insert(x,L)
+			return States
 
-
-
+    #return your ordered list
+ad = addInOrder('Oklahoma')
+print(ad)
 
 ```
 
