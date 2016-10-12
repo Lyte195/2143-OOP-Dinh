@@ -244,6 +244,22 @@ Write a class called `myPrimes` that represents a collection of your prime numbe
 ## Answer 6
 
 ```python
+class myPrimes(object):
+	def __init__(self,n):
+		self.n = n
+		self.p = []
+		
+	def addPrime(self,n):
+		if(n % 2 == 0):
+			print('Number is not prime')
+		else:
+			self.p.append(n)
+	
+	def removePrime(self, r):
+		self.p.remove(r)
+		
+	def printPrimes(self):
+		return(self.p)
 
 ```
 
