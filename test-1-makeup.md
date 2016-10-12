@@ -6,23 +6,27 @@
 Using python comments, label all lines that an OOP definition could be applied to.
 
 ```python
-
+# Encapsulation
+# Information hiding
 class Employee:
 
    empCount = 0
-
+# Constructor
    def __init__(self, name, salary):
+   # Attributes
       self.name = name
       self.salary = salary
       Employee.empCount += 1
-   
+   # Methods
    def displayCount(self):
      print "Total Employee %d" % Employee.empCount
 
    def displayEmployee(self):
       print "Name : ", self.name,  ", Salary: ", self.salary
 
-
+# Instantiation
+# Intance
+# Class
 emp1 = Employee("Zara", 2000)
 
 emp2 = Employee("Manni", 5000)
