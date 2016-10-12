@@ -1,7 +1,4 @@
 # Luong Dinh
-
-## Instructions:
-
 -----
 
 ## 1: Definitions: 
