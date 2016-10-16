@@ -42,7 +42,36 @@ print(soumyas_bag.number_sold)
 ### Answer 1
 
 ```python
-# answers here
+johns_bag = Bag()
+johns_bag.print_bag()
+# []
+
+for color in [’blue’, ’red’, ’green’, ’red’]:
+    johns_bag.add_skittle(Skittle(color))
+johns_bag.print_bag()
+# ['blue', 'red', 'green', 'red']
+
+s = johns_bag.take_skittle()
+print(s.color)
+# blue
+
+print(johns_bag.number_sold)
+# 1
+
+print(Bag.number_sold)
+# 1
+
+soumyas_bag = Bag()
+soumyas_bag.print_bag()
+
+print(johns_bag.print_bag())
+# ['red', 'green', 'red']
+
+print(Bag.number_sold)
+# 2
+
+print(soumyas_bag.number_sold)
+# 2
 
 ```
 
