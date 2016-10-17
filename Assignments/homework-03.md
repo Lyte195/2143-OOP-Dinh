@@ -84,9 +84,6 @@ def take_color(self, color):
 
 
 
-
-
-
 ```
 
 
