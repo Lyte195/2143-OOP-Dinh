@@ -116,6 +116,9 @@ def take_all(self):
 ### Answer 3
 
 ```python
-# answer here
+    def take_all(self):
+    	nl = []
+    	nl.extend(self.skittles)
+    	print(list(set(nl) - set(self.skittles)))
 
 ```
