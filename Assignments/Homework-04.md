@@ -7,6 +7,7 @@ Due: Oct 24<sup>th</sup> by class time.
 ***1.*** Implement the `Cat` class by inheriting from the `Pet` class. Make sure to use superclass
 methods wherever possible. In addition, add a `lose_life` method to the `Cat` class.
 
+### Answer
 ```python
 class Cat(Pet):
 	def __init__(self, name, owner, lives=9):
@@ -28,6 +29,7 @@ class Cat(Pet):
 
 ***2.*** Assume these commands are entered in order. What would Python output?
 
+### Answer
 ```python
 class Foo(object):
     def __init__(self, a):
