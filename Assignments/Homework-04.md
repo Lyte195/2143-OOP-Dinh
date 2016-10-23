@@ -91,22 +91,19 @@ methods wherever possible. In addition, add a `lose_life` method to the `Cat` cl
 
 ```python
 class Cat(Pet):
-    def __init__(self, name, owner, lives=9):
-    
-    
-    
-    
-    def talk(self):
-        """A cat says meow! when asked to talk."""
-        
-        
-        
-        
-    def lose_life(self):
-        """A cat can only lose a life if they have at least
-        one life. When lives reach zero, the ’is_alive’
-        variable becomes False.
-        """
+	def __init__(self, name, owner, lives=9):
+		Pet.__init__(self, name, owner)
+		self.lives = lives
+	
+	def talk(self):
+		print('meow')
+		
+	def lose_life(self):
+		 if self.lives >= 1:
+		 	is_alive =  true
+		 else:
+		 	is_alive = false
+		 
         
         
 ```
