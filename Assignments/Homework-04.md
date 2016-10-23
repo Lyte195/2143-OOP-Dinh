@@ -18,6 +18,7 @@ class Cat(Pet):
 		print('meow')
 		
 	def lose_life(self):
+		 self.lives -= 1
 		 if self.lives >= 1:
 		 	is_alive =  true
 		 else:
