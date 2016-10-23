@@ -3,17 +3,17 @@
 |:--------|:-----------------------------------------------------------|:------------|:---------|:---------------|
 | ***1*** | ***General***                                              |             |          |                |
 | -       | Code was on github                                         | pass/fail   |          | ![Alt text][1] |
-| -       | Code could be ran.                                         | pass/fail   |    -50   | ![Alt text][2] |
+| -       | Code could be ran.                                         | pass/fail   |    -20   | ![Alt text][2] |
 | -       | Code was commented                                         |    10       |    10    | ![Alt text][1] |
 | ***2*** | ***Lists***                                                |             |          |                |
 | -       | 1.1 Basics Part A 			                               |    10       |    10    | ![Alt text][1] |
 | -       | 1.2 List Methods, Part  B & C                              |    20       |    20    | ![Alt text][1] |
 | -       | 1.3 Slicing Part D                                         |    10       |    10    | ![Alt text][1] |
-| -       | 1.4 For loops Part E & F                                   |    20       |    20    | ![Alt text][1] |
+| -       | 1.4 For loops Part E & F                                   |    20       |    10    | ![Alt text][3] |
 | ***3*** | ***Dictionaries***                                         |             |          |                |
 | -       | 2 Part H			                                         |    10       |    10    | ![Alt text][1] |
 | -       | 2 Part I & J                                               |    20       |    20    | ![Alt text][1] |
-|         | Totals:                                                    | **100**     |  **50** | ![Alt text][1] |
+|         | Totals:                                                    | **100**     |  **70** | ![Alt text][1] |
 
 ### Comments:
 ```
@@ -24,6 +24,8 @@ If you have problems getting your code to build (syntax errors etc...) come see 
     """"
        ^
 SyntaxError: EOL while scanning string literal
+
+Part F missing
 ```
 
 [1]: http://f.cl.ly/items/3E231i211n2E042B1U3K/right.png  "Correct"
