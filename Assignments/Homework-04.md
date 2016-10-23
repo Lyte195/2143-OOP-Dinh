@@ -42,22 +42,22 @@ class Bar(Foo):
 f = Foo(4)
 b = Bar(3)
 print(f.a)
-# prints what ?
+# 4
 
 print(b.a)
-# prints what ?
+# 3
 
 print(f.garply())
-# prints what ?
+# 'Foo' object has no attribute 'baz'
 
 print(b.garply())
-# prints what ?
+# 3
 
 b.a = 9
 print(b.garply())
-# prints what ?
+# 9
 
 f.baz = lambda val: val * val
 print(f.garply())
-# prints what ?
+# 16
 ```
