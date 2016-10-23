@@ -162,6 +162,10 @@ class Player(object):
             if roll == 0:
                 break
             Score += roll
+            # Check for target score (100), and stop rolling.
+            if Score >= 100:
+                print(self.Name, 'has just reached', 100, 'points and is stopping')
+                break
         
         return (Score,NumRolls)
 
