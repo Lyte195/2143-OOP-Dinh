@@ -149,7 +149,7 @@ class Player(object):
         elif self.Strategy == 'CopyCat':
             pass
         elif self.Strategy == 'SprintToFinish':
-            self.SprintToFinish()
+            Score,NumRolls = self.SprintToFinish()
         
         self.TotalScore += Score
         self.LastScore = Score
@@ -165,18 +165,30 @@ class Player(object):
             if roll == 0:
                 break
             Score += roll
-        
+            # Check for target score (100), and stop rolling.
+            self.TotalScore += roll
+            # Check for target score (100), and stop rolling.
+            if self.TotalScore >= 100:
+                print(self.Name, 'has just reached', 100, 'points and is stopping')
+                break        
         return (Score,NumRolls)
         
     def SprintToFinish(self):
         Score = 0
         NumRolls = 0    	
-    	while self.TotalScore < 100:
+        while self.TotalScore < 100:
             NumRolls += 1
             roll = self.pig.Roll()
             if roll == 0:
                 break
+            Score += roll
+            # Check for target score (100), and stop rolling.
             self.TotalScore += roll
+            # Check for target score (100), and stop rolling.
+            if self.TotalScore >= 100:
+                print(self.Name, 'has just reached', 100, 'points and is stopping')
+                break        
+        return (Score,NumRolls)
 
             
     def Aggressive(self):
@@ -188,7 +200,12 @@ class Player(object):
             if roll == 0:
                 break
             Score += roll
-        
+            # Check for target score (100), and stop rolling.
+            self.TotalScore += roll
+            # Check for target score (100), and stop rolling.
+            if self.TotalScore >= 100:
+                print(self.Name, 'has just reached', 100, 'points and is stopping')
+                break        
         return (Score,NumRolls)
         
     def Cautious(self):
@@ -200,7 +217,12 @@ class Player(object):
             if roll == 0:
                 break
             Score += roll
-        
+            # Check for target score (100), and stop rolling.
+            self.TotalScore += roll
+            # Check for target score (100), and stop rolling.
+            if self.TotalScore >= 100:
+                print(self.Name, 'has just reached', 100, 'points and is stopping')
+                break        
         return (Score,NumRolls)
 
     def Robust(self):
