@@ -141,9 +141,9 @@ class Player(object):
         if self.Strategy == 'Random':
             Score,NumRolls = self.RandomRoll()
         elif self.Strategy == 'Aggressive':
-            pass
+            Score,NumRolls = self.Aggressive()
         elif self.Strategy == 'Cautious':
-            pass
+            Score,NumRolls = self.Cautious()
         elif self.Strategy == 'Robust':
             pass
         elif self.Strategy == 'CopyCat':
@@ -176,8 +176,7 @@ class Player(object):
             roll = self.pig.Roll()
             if roll == 0:
                 break
-            Score += roll
-        return(Score, NumRolls)
+            self.TotalScore += roll
 
             
     def Aggressive(self):
