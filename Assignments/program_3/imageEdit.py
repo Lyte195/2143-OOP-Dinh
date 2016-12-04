@@ -3,17 +3,21 @@ import sys
 class ImageEdit(object):
     def __init__(self):
         pass
+    def glassEffect(self,image,imageout=None):
+        pass
     
     def flip(self,image,imageout=None):
         print("flipping",image,imageout)
         
+    def blur(self,image,imageout=None):
+        pass
     def posterize(self,image,imageout=None):
         print("postering")
         
     def solarize(self,image,imageout=None):
         print("sostering")
         
-    def polaroid(self,image,imageout=None):
+    def warhol(self,image,imageout=None):
         print("poslering")
         
 print(sys.argv)
